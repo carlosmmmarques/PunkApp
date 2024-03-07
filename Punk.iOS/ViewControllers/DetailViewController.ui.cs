@@ -15,6 +15,8 @@ namespace Punk.iOS.ViewControllers
 
         protected FoodPairingsView FoodPairingsView { get; private set; }
 
+        protected UILabel TipLabel { get; private set; }
+
         protected UIView ImagegeContainer { get; private set; }
         protected UIImageView BeerImageView { get; private set; }
 
@@ -27,6 +29,7 @@ namespace Punk.iOS.ViewControllers
 
         protected override void CreateViews()
         {
+            NavigationController.NavigationBar.TintColor = Constants.Colors.DARK_BEER;
             View.BackgroundColor = UIColor.SystemBackground;
 
             ScrollView = new UIScrollView();
@@ -65,11 +68,22 @@ namespace Punk.iOS.ViewControllers
             FoodPairingsView = new FoodPairingsView();
             ScrollContainer.Add(FoodPairingsView);
 
+            TipLabel = new UILabel
+            {
+                Font = Constants.Fonts.ItalicFont,
+                TextAlignment = UITextAlignment.Center,
+                Lines = 0,
+                LineBreakMode = UILineBreakMode.WordWrap
+            };
+            ScrollContainer.Add(TipLabel);
+
             ImagegeContainer = new UIView
             {
                 BackgroundColor = UIColor.SystemGray6,
                 ClipsToBounds = true
             };
+            ImagegeContainer.Layer.BorderWidth = 1;
+            ImagegeContainer.Layer.BorderColor = UIColor.Gray.CGColor;
             ScrollContainer.Add(ImagegeContainer);
 
             BeerImageView = new UIImageView
@@ -136,10 +150,14 @@ namespace Punk.iOS.ViewControllers
                 FoodPairingsView.AtLeadingOf(ScrollContainer),
                 FoodPairingsView.AtTrailingOf(ScrollContainer),
 
-                ImagegeContainer.Below(FoodPairingsView, Constants.Margins.BIG),
+                TipLabel.Below(FoodPairingsView, Constants.Margins.BIG),
+                TipLabel.WithSameLeading(NameLabel),
+                TipLabel.WithSameTrailing(NameLabel),
+
+                ImagegeContainer.Below(TipLabel, Constants.Margins.BIG),
                 ImagegeContainer.WithSameLeading(ScrollContainer),
                 ImagegeContainer.WithSameTrailing(ScrollContainer),
-                ImagegeContainer.AtBottomOfSafeArea(ScrollContainer)
+                ImagegeContainer.AtBottomOf(ScrollContainer)
             );
 
             ImagegeContainer.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();

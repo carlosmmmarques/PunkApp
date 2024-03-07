@@ -20,7 +20,8 @@ namespace Punk.iOS.Resources
 
 		public static class Colors
 		{
-			public static readonly UIColor BEER = new UIColor(0.96f, 0.76f, 0f, 1f);
+			public static readonly UIColor BEER = new UIColor(0.96f, 0.76f, 0f, 1.00f);
+            public static readonly UIColor DARK_BEER = new UIColor(0.93f, 0.62f, 0.00f, 1.00f);
         }
 
         public static class Fonts
@@ -34,7 +35,7 @@ namespace Punk.iOS.Resources
 
         public static class Text
         {
-            public static readonly string ALCOHOL = "teste";
+            public static readonly string ALCOHOL = "Alcohol";
             public static readonly string BITTERNESS = "Bitterness";
             public static readonly string ACIDITY = "Acidity";
             public static readonly string COLOR = "Color";

@@ -364,3 +364,4 @@ Droid/Resources/values/Strings.xml
 /Punk.iOS/bin/iPhoneSimulator/Debug
 *.exe
 *.log
+/Punk.iOS/bin

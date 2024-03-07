@@ -34,6 +34,7 @@ namespace Punk.iOS.ViewControllers
                 DescriptionLabel.Text = _beer.Description;
                 TaglineLabel.Text = _beer.Tagline;
                 FoodPairingsView.Setup(_beer.FoodPairing);
+                TipLabel.Text = _beer.BrewersTips;
                 ImageService.Instance.LoadUrl(_beer.ImageUrl).Into(BeerImageView);
                 AbvProgressView.SetProgress(_beer.Abv.ConvertFromAbv());
                 IbuProgressView.SetProgress(_beer.Ibu.ConvertFromIbu());

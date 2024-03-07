@@ -17,6 +17,10 @@ namespace Punk.iOS.Views
 
 		private void CreateViews()
 		{
+			BackgroundColor = UIColor.SystemGray6;
+			Layer.BorderColor = UIColor.Gray.CGColor;
+			Layer.BorderWidth = 1;
+
 			TitleLabel = new UILabel
 			{
 				Text = Constants.Text.FOOD_PAIRINGS,
@@ -38,14 +42,14 @@ namespace Punk.iOS.Views
 		{
 			this.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
 			this.AddConstraints(
-				TitleLabel.AtTopOf(this),
+				TitleLabel.AtTopOf(this, Constants.Margins.MEDIUM),
 				TitleLabel.AtLeadingOf(this, Constants.Margins.MEDIUM),
 				TitleLabel.AtTrailingOf(this, Constants.Margins.MEDIUM),
 
                 FooPairingsStack.Below(TitleLabel, Constants.Margins.SMALL),
                 FooPairingsStack.WithSameLeading(TitleLabel),
                 FooPairingsStack.WithSameTrailing(TitleLabel),
-                FooPairingsStack.AtBottomOf(this)
+                FooPairingsStack.AtBottomOf(this, Constants.Margins.MEDIUM)
             );
 		}
 	}

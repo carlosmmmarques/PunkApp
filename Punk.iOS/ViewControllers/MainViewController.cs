@@ -17,10 +17,7 @@ namespace Punk.iOS.ViewControllers
 
         public override void ViewDidLoad()
         {
-            //TODO config git
             //TODO add loading
-            //TODO add string resources
-
             base.ViewDidLoad();
 
             BeerTableView.RegisterClassForCellReuse(typeof(BeerTableViewCell), nameof(BeerTableViewCell));
