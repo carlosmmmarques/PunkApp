@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/carlos/Projects/PunkApp/Punk.iOS/Punk.iOS.csproj": {}
+  },
+  "projects": {
+    "/Users/carlos/Projects/PunkApp/Punk.iOS/Punk.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlos/Projects/PunkApp/Punk.iOS/Punk.iOS.csproj",
+        "projectName": "Punk.iOS",
+        "projectPath": "/Users/carlos/Projects/PunkApp/Punk.iOS/Punk.iOS.csproj",
+        "packagesPath": "/Users/carlos/.nuget/packages/",
+        "outputPath": "/Users/carlos/Projects/PunkApp/Punk.iOS/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/carlos/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://solutionsdelivery.pkgs.visualstudio.com/_packaging/DXS%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Cirrious.FluentLayout": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.FFImageLoading": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="Punk.iOS.app/Punk.iOS">
+      <BCSymbolMapName>Punk.iOS.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>Punk.iOS.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/carlos/Projects/PunkApp/Punk.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <DSymName>Punk.iOS.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/carlos/Projects/PunkApp/Punk.iOS</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

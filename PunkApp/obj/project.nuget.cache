@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "1lKJS2lrxe7WXYBmvWYRvLzueDIpcNw0IT3MaFFB+tzc/qfarjH+SsIYxtdMjXhrsJtKX0HXDsBx9rDGVaYbYg==",
+  "success": true,
+  "projectFilePath": "/Users/carlos/Projects/PunkApp/PunkApp/PunkApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/carlos/.nuget/packages/cirrious.fluentlayout/3.0.0/cirrious.fluentlayout.3.0.0.nupkg.sha512",
+    "/Users/carlos/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/carlos/.nuget/packages/system.net.http/4.3.4/system.net.http.4.3.4.nupkg.sha512",
+    "/Users/carlos/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/carlos/.nuget/packages/webp.touch/1.0.8/webp.touch.1.0.8.nupkg.sha512",
+    "/Users/carlos/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/carlos/.nuget/packages/xamarin.ffimageloading/2.4.11.982/xamarin.ffimageloading.2.4.11.982.nupkg.sha512"
+  ],
+  "logs": []
+}
