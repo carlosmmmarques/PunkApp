@@ -31,13 +31,18 @@ namespace Punk.iOS.Managers
             };
         }
 
-		public async Task<List<Beer>> GetBeerListAsync(int page = 1)
+		public async Task<List<Beer>> GetBeerListAsync(int page, string name)
 		{
             List<Beer> beers = new List<Beer>();
 
             try
             {
-                var response = await _httpClient.GetAsync("beers?page=" + page);
+                var endpoint = "beers?page=" + page;
+
+                if (!string.IsNullOrEmpty(name))
+                    endpoint += "&beer_name=" + name;
+
+                var response = await _httpClient.GetAsync(endpoint);
 
                 if (response.IsSuccessStatusCode)
                 {

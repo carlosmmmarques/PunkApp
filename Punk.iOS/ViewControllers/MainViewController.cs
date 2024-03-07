@@ -1,4 +1,5 @@
-﻿using FFImageLoading;
+﻿using System;
+using FFImageLoading;
 using Punk.iOS.Models;
 using Punk.iOS.TableView.Cells;
 using Punk.iOS.TableView.Delegates;
@@ -26,6 +27,20 @@ namespace Punk.iOS.ViewControllers
             _delegate.LoadMoreBeersAction = async () => await _viewModel.LoadDataAsync();
         }
 
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            SearchButton.TouchUpInside += SearchButton_TouchUpInside;
+        }
+
+        public override void ViewWillDisappear(bool animated)
+        {
+            base.ViewWillDisappear(animated);
+
+            SearchButton.TouchUpInside -= SearchButton_TouchUpInside;
+        }
+
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();
@@ -35,6 +50,11 @@ namespace Punk.iOS.ViewControllers
         private void NavigateToBeerDetail(Beer beer)
         {
             NavigationController.PushViewController(new DetailViewController(beer), true);
+        }
+
+        private async void SearchButton_TouchUpInside(object sender, EventArgs e)
+        {
+            await _viewModel.SearchBeer(SearchTextField.Text);
         }
     }
 }

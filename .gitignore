@@ -365,3 +365,4 @@ Droid/Resources/values/Strings.xml
 *.exe
 *.log
 /Punk.iOS/bin
+/Punk.iOS/obj/iPhoneSimulator

@@ -14,7 +14,7 @@ namespace Punk.iOS.ViewModels
 
 		private int currentPage = 1;
 		private bool canReload = true;
-
+        private string searchWord;
 
 		public MainViewModel()
 		{
@@ -26,10 +26,21 @@ namespace Punk.iOS.ViewModels
 			if (canReload)
 			{
                 canReload = false;
-                List<Beer> newBeers = await DataManager.Instance.GetBeerListAsync(currentPage++);
+                List<Beer> newBeers = await DataManager.Instance.GetBeerListAsync(currentPage++, searchWord);
                 BeerList.AddRange(newBeers);
                 ReloadBeerList?.Invoke();
                 canReload = true;
+            }
+        }
+
+		public async Task SearchBeer(string searchWord)
+		{
+			if (!string.Equals(this.searchWord, searchWord))
+			{
+                this.searchWord = searchWord;
+                currentPage = 1;
+                BeerList.RemoveRange(0, BeerList.Count);
+                await LoadDataAsync();
             }
         }
 	}
