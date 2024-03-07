@@ -11,8 +11,8 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/MonoTouch.NUnitLite.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/MonoTouch.Dialog-1.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/System.Json.dll
-/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/PunkApp.exe
-/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/Punk.iOS.exe
+/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/Facades/netstandard.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/System.Data.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/System.Transactions.dll
@@ -24,9 +24,9 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/System.ServiceModel.Internals.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/System.Web.Services.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/System.Xml.Linq.dll
-/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/Cirrious.FluentLayout.Touch.dll
-/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/FFImageLoading.Platform.dll
-/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/FFImageLoading.dll
+/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/Cirrious.FluentLayout.Touch.dll
+/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/FFImageLoading.Platform.dll
+/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/FFImageLoading.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/Facades/System.Resources.ResourceManager.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/Facades/System.Collections.dll
@@ -40,4 +40,4 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/Facades/System.Text.RegularExpressions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.18/lib/mono/Xamarin.iOS/Facades/System.Linq.dll
-/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/WebP.Touch.dll
+/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/WebP.Touch.dll

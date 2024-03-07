@@ -3,6 +3,7 @@ using Cirrious.FluentLayouts.Touch;
 using Punk.iOS.TableView.Sources;
 using Punk.iOS.TableView.Delegates;
 using Punk.iOS.Resources;
+using Punk.iOS.Views;
 
 namespace Punk.iOS.ViewControllers
 {
@@ -12,6 +13,8 @@ namespace Punk.iOS.ViewControllers
         protected UILabel TitleLabel { get; private set; }
         protected UITextField SearchTextField { get; private set; }
         protected UIButton SearchButton { get; private set; }
+
+        protected LoadingView LoadingView { get; private set; }
 
         protected UITableView BeerTableView { get; private set; }
 
@@ -31,6 +34,7 @@ namespace Punk.iOS.ViewControllers
             {
                 Font = Constants.Fonts.APP_TITLE_FONT,
                 Text = Constants.Text.APP_TITLE,
+                TextColor = Constants.Colors.TEXT_BROWN
             };
             SearchContainer.Add(TitleLabel);
 
@@ -43,9 +47,13 @@ namespace Punk.iOS.ViewControllers
 
             SearchButton = new UIButton();
             SearchButton.SetTitle(Constants.Text.SEARCH_BUTTON, UIControlState.Normal);
-            SearchButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            SearchButton.SetTitleColor(Constants.Colors.TEXT_BROWN, UIControlState.Normal);
             SearchButton.SetTitleColor(UIColor.DarkGray, UIControlState.Highlighted);
+            SearchContainer.Layer.ShadowOpacity = .5f;
             SearchContainer.Add(SearchButton);
+
+            LoadingView = new LoadingView();
+            SearchContainer.Add(LoadingView);
 
             _dataSource = new BeerTableViewSource(_viewModel.BeerList, NavigateToBeerDetail);
             _delegate = new BeerTableViewDelegate();
@@ -89,7 +97,11 @@ namespace Punk.iOS.ViewControllers
                 SearchTextField.Trailing().EqualTo().LeadingOf(SearchButton).Minus(Constants.Margins.SMALL),
 
                 SearchButton.WithSameCenterY(SearchTextField),
-                SearchButton.AtTrailingOf(SearchContainer, Constants.Margins.MEDIUM)
+                SearchButton.AtTrailingOf(SearchContainer, Constants.Margins.MEDIUM),
+
+                LoadingView.AtLeadingOf(SearchContainer),
+                LoadingView.AtTrailingOf(SearchContainer),
+                LoadingView.AtBottomOf(SearchContainer)
             );
         }
     }

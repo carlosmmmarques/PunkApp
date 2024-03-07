@@ -25,7 +25,7 @@ namespace Punk.iOS.Views
 
 			UnderLine = new UIView
 			{
-				BackgroundColor = Constants.Colors.DARK_BEER
+				BackgroundColor = UIColor.SystemGray4
 			};
 			Add(UnderLine);
         }
@@ -42,7 +42,7 @@ namespace Punk.iOS.Views
                 UnderLine.AtLeadingOf(this),
 				UnderLine.AtTrailingOf(this),
 				UnderLine.AtBottomOf(this),
-                UnderLine.Height().EqualTo(2)
+                UnderLine.Height().EqualTo(1)
             );
 		}
 	}

@@ -1,10 +1,46 @@
-objc[80214]: Class MicaPlayer is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI (0x12910b118) and /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI (0x123204958). One of the two will be used. Which one is undefined.
-objc[80214]: Class NSURLSessionDelegate is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy (0x7ff8646081a8) and /Users/carlos/Library/Developer/CoreSimulator/Devices/C46377C2-D58E-492B-9489-604D7D1B78F4/data/Containers/Bundle/Application/538B2BED-99FA-4EE2-879C-36A3FBD4756D/Tests.app/Tests (0x10278e948). One of the two will be used. Which one is undefined.
+objc[96640]: Class MicaPlayer is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI (0x130383118) and /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI (0x12a070958). One of the two will be used. Which one is undefined.
+objc[96640]: Class NSURLSessionDelegate is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy (0x7ff8646081a8) and /Users/carlos/Library/Developer/CoreSimulator/Devices/C46377C2-D58E-492B-9489-604D7D1B78F4/data/Containers/Bundle/Application/BC05D05D-2B4F-4E62-8AFB-CBB25A537D57/Tests.app/Tests (0x1093fb948). One of the two will be used. Which one is undefined.
 MonoTouch: Could not install sigaction override, unexpected sigaction implementation.
-2024-03-07 12:32:44.750129+0000 Tests[80214:2193207] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=80214
-2024-03-07 12:32:44.750386+0000 Tests[80214:2193207] SecTaskCopyDebugDescription: Tests[80214]/0#-1 LF=0
-2024-03-07 12:32:44.770364+0000 Tests[80214:2193207] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=80214
-2024-03-07 12:32:44.770679+0000 Tests[80214:2193207] SecTaskCopyDebugDescription: Tests[80214]/0#-1 LF=0
-2024-03-07 12:32:44.850649+0000 Tests[80214:2193265] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=80214
-2024-03-07 12:32:44.850899+0000 Tests[80214:2193265] SecTaskCopyDebugDescription: Tests[80214]/0#-1 LF=0
-2024-03-07 12:32:45.181149+0000 Tests[80214:2193207] [TableView] Warning once only: UITableView was told to layout its visible cells and other contents without being in the view hierarchy (the table view or one of its superviews has not been added to a window). This may cause bugs by forcing views inside the table view to load and perform layout without accurate information (e.g. table view bounds, trait collection, layout margins, safe area insets, etc), and will also cause unnecessary performance overhead due to extra layout passes. Make a symbolic breakpoint at UITableViewAlertForLayoutOutsideViewHierarchy to catch this in the debugger and see what caused this to occur, so you can avoid this action altogether if possible, or defer it until the table view has been added to a window. Table view: <UITableView: 0x1298a5a00; frame = (0 0; 430 932); clipsToBounds = YES; autoresize = W+TM+H; gestureRecognizers = <NSArray: 0x600000c36a60>; backgroundColor = <UIDynamicSystemColor: 0x6000017356c0; name = systemGroupedBackgroundColor>; layer = <CALayer: 0x600000388420>; contentOffset: {0, -97.666666666666671}; contentSize: {430, 280}; adjustedContentInset: {97.666666666666671, 0, 34, 0}; dataSource: <MonoTouch_Dialog_DialogViewController_Source: 0x60000002cf20>>
+2024-03-07 19:54:05.723957+0000 Tests[96640:2556205] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=96640
+2024-03-07 19:54:05.724199+0000 Tests[96640:2556205] SecTaskCopyDebugDescription: Tests[96640]/0#-1 LF=0
+2024-03-07 19:54:05.760624+0000 Tests[96640:2556205] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=96640
+2024-03-07 19:54:05.760881+0000 Tests[96640:2556205] SecTaskCopyDebugDescription: Tests[96640]/0#-1 LF=0
+2024-03-07 19:54:05.944494+0000 Tests[96640:2556516] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=96640
+2024-03-07 19:54:05.944689+0000 Tests[96640:2556516] SecTaskCopyDebugDescription: Tests[96640]/0#-1 LF=0
+2024-03-07 19:54:06.740452+0000 Tests[96640:2556205] [TableView] Warning once only: UITableView was told to layout its visible cells and other contents without being in the view hierarchy (the table view or one of its superviews has not been added to a window). This may cause bugs by forcing views inside the table view to load and perform layout without accurate information (e.g. table view bounds, trait collection, layout margins, safe area insets, etc), and will also cause unnecessary performance overhead due to extra layout passes. Make a symbolic breakpoint at UITableViewAlertForLayoutOutsideViewHierarchy to catch this in the debugger and see what caused this to occur, so you can avoid this action altogether if possible, or defer it until the table view has been added to a window. Table view: <UITableView: 0x13138fc00; frame = (0 0; 430 932); clipsToBounds = YES; autoresize = W+TM+H; gestureRecognizers = <NSArray: 0x600000c2e4f0>; backgroundColor = <UIDynamicSystemColor: 0x600001737440; name = systemGroupedBackgroundColor>; layer = <CALayer: 0x60000036b580>; contentOffset: {0, -97.666666666666671}; contentSize: {430, 280}; adjustedContentInset: {97.666666666666671, 0, 34, 0}; dataSource: <MonoTouch_Dialog_DialogViewController_Source: 0x600000027880>>
+2024-03-07 19:54:07.887845+0000 Tests[96640:2556205] [Runner executing:	MyTest]
+2024-03-07 19:54:07.888002+0000 Tests[96640:2556205] [MonoTouch Version:	16.4.0]
+2024-03-07 19:54:07.888233+0000 Tests[96640:2556205] [Assembly:	Xamarin.iOS.dll (64 bits)]
+2024-03-07 19:54:07.888407+0000 Tests[96640:2556205] [GC:	sgen]
+2024-03-07 19:54:07.888873+0000 Tests[96640:2556205] [iPhone:	iOS v17.0]
+2024-03-07 19:54:07.889068+0000 Tests[96640:2556205] [Device Name:	iPhone 15 Pro Max]
+2024-03-07 19:54:07.889389+0000 Tests[96640:2556205] [Device UDID:	unknown]
+2024-03-07 19:54:07.899394+0000 Tests[96640:2556205] [Device Locale:	en_PT]
+2024-03-07 19:54:07.907835+0000 Tests[96640:2556205] [Device Date/Time:	3/7/2024 7:54:07 PM]
+2024-03-07 19:54:07.908549+0000 Tests[96640:2556205] [Bundle:	com.ekz.Tests]
+2024-03-07 19:54:07.912591+0000 Tests[96640:2556205] 
+2024-03-07 19:54:07.912776+0000 Tests[96640:2556205] MyTest
+2024-03-07 19:54:07.932044+0000 Tests[96640:2556205] 	[PASS] MyTest.AbvConverter
+2024-03-07 19:54:07.936954+0000 Tests[96640:2556205] 	[PASS] MyTest.IbuConverter
+2024-03-07 19:54:07.938119+0000 Tests[96640:2556205] 	[PASS] MyTest.PhConverter
+2024-03-07 19:54:07.938686+0000 Tests[96640:2556205] 	[PASS] MyTest.SrmConverter
+2024-03-07 19:54:07.942661+0000 Tests[96640:2556205] MyTest : 26 ms
+2024-03-07 19:54:07.943389+0000 Tests[96640:2556205] Tests run: 4 Passed: 4 Inconclusive: 0 Failed: 0 Ignored: 0
+2024-03-07 19:54:09.333619+0000 Tests[96640:2556205] [Runner executing:	MyTest]
+2024-03-07 19:54:09.333757+0000 Tests[96640:2556205] [MonoTouch Version:	16.4.0]
+2024-03-07 19:54:09.333893+0000 Tests[96640:2556205] [Assembly:	Xamarin.iOS.dll (64 bits)]
+2024-03-07 19:54:09.334002+0000 Tests[96640:2556205] [GC:	sgen]
+2024-03-07 19:54:09.334144+0000 Tests[96640:2556205] [iPhone:	iOS v17.0]
+2024-03-07 19:54:09.334256+0000 Tests[96640:2556205] [Device Name:	iPhone 15 Pro Max]
+2024-03-07 19:54:09.334374+0000 Tests[96640:2556205] [Device UDID:	unknown]
+2024-03-07 19:54:09.334501+0000 Tests[96640:2556205] [Device Locale:	en_PT]
+2024-03-07 19:54:09.334621+0000 Tests[96640:2556205] [Device Date/Time:	3/7/2024 7:54:09 PM]
+2024-03-07 19:54:09.334733+0000 Tests[96640:2556205] [Bundle:	com.ekz.Tests]
+2024-03-07 19:54:09.334988+0000 Tests[96640:2556205] 
+2024-03-07 19:54:09.335106+0000 Tests[96640:2556205] MyTest
+2024-03-07 19:54:09.335445+0000 Tests[96640:2556205] 	[PASS] MyTest.AbvConverter
+2024-03-07 19:54:09.335643+0000 Tests[96640:2556205] 	[PASS] MyTest.IbuConverter
+2024-03-07 19:54:09.335833+0000 Tests[96640:2556205] 	[PASS] MyTest.PhConverter
+2024-03-07 19:54:09.336071+0000 Tests[96640:2556205] 	[PASS] MyTest.SrmConverter
+2024-03-07 19:54:09.336417+0000 Tests[96640:2556205] MyTest : 1 ms
+2024-03-07 19:54:09.336643+0000 Tests[96640:2556205] Tests run: 4 Passed: 4 Inconclusive: 0 Failed: 0 Ignored: 0

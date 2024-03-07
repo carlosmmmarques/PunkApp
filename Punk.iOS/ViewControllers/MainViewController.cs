@@ -18,26 +18,26 @@ namespace Punk.iOS.ViewControllers
 
         public override void ViewDidLoad()
         {
-            //TODO add loading
             base.ViewDidLoad();
 
             BeerTableView.RegisterClassForCellReuse(typeof(BeerTableViewCell), nameof(BeerTableViewCell));
 
             _viewModel.ReloadBeerList = () => InvokeOnMainThread(BeerTableView.ReloadData);
+            _viewModel.ScrollToTop = ScrollToTop;
+            _viewModel.LoadingStateChanged = LoadingView.SetLoading;
+
             _delegate.LoadMoreBeersAction = async () => await _viewModel.LoadDataAsync();
         }
 
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
-
             SearchButton.TouchUpInside += SearchButton_TouchUpInside;
         }
 
         public override void ViewWillDisappear(bool animated)
         {
             base.ViewWillDisappear(animated);
-
             SearchButton.TouchUpInside -= SearchButton_TouchUpInside;
         }
 
@@ -55,6 +55,15 @@ namespace Punk.iOS.ViewControllers
         private async void SearchButton_TouchUpInside(object sender, EventArgs e)
         {
             await _viewModel.SearchBeer(SearchTextField.Text);
+        }
+
+        private void ScrollToTop()
+        {
+            if (_viewModel.BeerList.Count > 0)
+            {
+                InvokeOnMainThread(() =>
+                    BeerTableView.ScrollToRow(Foundation.NSIndexPath.Create(0, 0), UITableViewScrollPosition.Top, false));
+            }
         }
     }
 }

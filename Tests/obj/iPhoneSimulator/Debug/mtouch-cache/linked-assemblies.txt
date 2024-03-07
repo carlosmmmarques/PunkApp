@@ -12,7 +12,7 @@ RemoveDynamicRegistrar:false
 /Users/carlos/Projects/PunkApp/Tests/bin/iPhoneSimulator/Debug/Tests.app:/Users/carlos/Projects/PunkApp/Tests/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/MonoTouch.NUnitLite.dll
 /Users/carlos/Projects/PunkApp/Tests/bin/iPhoneSimulator/Debug/Tests.app:/Users/carlos/Projects/PunkApp/Tests/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/MonoTouch.Dialog-1.dll
 /Users/carlos/Projects/PunkApp/Tests/bin/iPhoneSimulator/Debug/Tests.app:/Users/carlos/Projects/PunkApp/Tests/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Json.dll
-/Users/carlos/Projects/PunkApp/Tests/bin/iPhoneSimulator/Debug/Tests.app:/Users/carlos/Projects/PunkApp/Tests/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/PunkApp.exe
+/Users/carlos/Projects/PunkApp/Tests/bin/iPhoneSimulator/Debug/Tests.app:/Users/carlos/Projects/PunkApp/Tests/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Punk.iOS.exe
 /Users/carlos/Projects/PunkApp/Tests/bin/iPhoneSimulator/Debug/Tests.app:/Users/carlos/Projects/PunkApp/Tests/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Newtonsoft.Json.dll
 /Users/carlos/Projects/PunkApp/Tests/bin/iPhoneSimulator/Debug/Tests.app:/Users/carlos/Projects/PunkApp/Tests/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/netstandard.dll
 /Users/carlos/Projects/PunkApp/Tests/bin/iPhoneSimulator/Debug/Tests.app:/Users/carlos/Projects/PunkApp/Tests/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Data.dll

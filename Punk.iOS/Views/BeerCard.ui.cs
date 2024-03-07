@@ -45,7 +45,8 @@ namespace Punk.iOS.Views
                 TextAlignment = UITextAlignment.Center,
                 Font = Constants.Fonts.TITLE,
 				Lines = 0,
-				LineBreakMode = UILineBreakMode.WordWrap
+				LineBreakMode = UILineBreakMode.WordWrap,
+				TextColor = Constants.Colors.TEXT_BROWN
             };
 			Add(NameLabel);
 
@@ -54,14 +55,16 @@ namespace Punk.iOS.Views
                 TextAlignment = UITextAlignment.Center,
                 Font = Constants.Fonts.CONTENT,
 				Lines = 4,
-				LineBreakMode = UILineBreakMode.TailTruncation
+				LineBreakMode = UILineBreakMode.TailTruncation,
+                TextColor = Constants.Colors.TEXT_BROWN
             };
 			Add(DescriptionLabel);
 
 			ContributorLabel = new UILabel
 			{
 				TextAlignment = UITextAlignment.Right,
-                Font = Constants.Fonts.SMALL
+                Font = Constants.Fonts.SMALL,
+                TextColor = Constants.Colors.TEXT_BROWN
             };
 			Add(ContributorLabel);
         }

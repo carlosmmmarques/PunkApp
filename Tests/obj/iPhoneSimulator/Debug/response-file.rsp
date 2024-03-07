@@ -14,7 +14,7 @@
 --dsym=no
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/MonoTouch.NUnitLite.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
---reference=/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/PunkApp.exe
+--reference=/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/Punk.iOS.exe
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll
@@ -162,8 +162,8 @@
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
---reference=/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
---reference=/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/Cirrious.FluentLayout.Touch.dll
---reference=/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/FFImageLoading.Platform.dll
---reference=/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/FFImageLoading.dll
---reference=/Users/carlos/Projects/PunkApp/PunkApp/bin/iPhoneSimulator/Debug/WebP.Touch.dll
+--reference=/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+--reference=/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/Cirrious.FluentLayout.Touch.dll
+--reference=/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/FFImageLoading.Platform.dll
+--reference=/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/FFImageLoading.dll
+--reference=/Users/carlos/Projects/PunkApp/Punk.iOS/bin/iPhoneSimulator/Debug/WebP.Touch.dll

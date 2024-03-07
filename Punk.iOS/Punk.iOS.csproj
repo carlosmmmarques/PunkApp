@@ -187,8 +187,12 @@
             <DependentUpon>FoodPairingsView.cs</DependentUpon>
         </Compile>
         <Compile Include="Views\FoodPairingItem.cs" />
-        <Compile Include="Views\FoodPairingItem.ui.cs" >
+        <Compile Include="Views\FoodPairingItem.ui.cs">
             <DependentUpon>FoodPairingItem.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\LoadingView.cs" />
+        <Compile Include="Views\LoadingView.ui.cs" >
+            <DependentUpon>LoadingView.cs</DependentUpon>
         </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

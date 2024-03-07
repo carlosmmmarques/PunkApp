@@ -22,6 +22,7 @@ namespace Punk.iOS.Resources
 		{
 			public static readonly UIColor BEER = new UIColor(0.96f, 0.76f, 0f, 1.00f);
             public static readonly UIColor DARK_BEER = new UIColor(0.93f, 0.62f, 0.00f, 1.00f);
+            public static readonly UIColor TEXT_BROWN = new UIColor(0.28f, 0.10f, 0.04f, 1.00f);
         }
 
         public static class Fonts
