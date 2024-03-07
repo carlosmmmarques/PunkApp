@@ -13,11 +13,12 @@ namespace Punk.iOS.ViewControllers
         protected UILabel TaglineLabel { get; private set; }
         protected UILabel DescriptionLabel { get; private set; }
 
+        protected FoodPairingsView FoodPairingsView { get; private set; }
+
         protected UIView ImagegeContainer { get; private set; }
         protected UIImageView BeerImageView { get; private set; }
 
         protected UIStackView ProgessStackView { get; private set; }
-
         protected BeerProgressView AbvProgressView { get; private set; }
         protected BeerProgressView IbuProgressView { get; private set; }
         protected BeerProgressView PhProgressView { get; private set; }
@@ -61,6 +62,9 @@ namespace Punk.iOS.ViewControllers
             };
             ScrollContainer.Add(DescriptionLabel);
 
+            FoodPairingsView = new FoodPairingsView();
+            ScrollContainer.Add(FoodPairingsView);
+
             ImagegeContainer = new UIView
             {
                 BackgroundColor = UIColor.SystemGray6,
@@ -102,7 +106,7 @@ namespace Punk.iOS.ViewControllers
                 ScrollView.AtTopOfSafeArea(View),
                 ScrollView.AtLeadingOf(View),
                 ScrollView.AtTrailingOf(View),
-                ScrollView.AtBottomOfSafeArea(View)
+                ScrollView.AtBottomOf(View, Constants.Margins.BIG)
             );
 
             ScrollView.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
@@ -128,7 +132,11 @@ namespace Punk.iOS.ViewControllers
                 DescriptionLabel.WithSameLeading(NameLabel),
                 DescriptionLabel.WithSameTrailing(NameLabel),
 
-                ImagegeContainer.Below(DescriptionLabel, Constants.Margins.BIG),
+                FoodPairingsView.Below(DescriptionLabel, Constants.Margins.BIG),
+                FoodPairingsView.AtLeadingOf(ScrollContainer),
+                FoodPairingsView.AtTrailingOf(ScrollContainer),
+
+                ImagegeContainer.Below(FoodPairingsView, Constants.Margins.BIG),
                 ImagegeContainer.WithSameLeading(ScrollContainer),
                 ImagegeContainer.WithSameTrailing(ScrollContainer),
                 ImagegeContainer.AtBottomOfSafeArea(ScrollContainer)

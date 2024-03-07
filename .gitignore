@@ -358,5 +358,6 @@ MigrationBackup/
 **/*.Droid.Utils/**/[Rr]esource.[Dd]esigner.cs
 /Droid/Resources/Resource.designer.cs
 Droid/Resources/values/Strings.xml
-Localizable.strings
-LocalizableStringsKeys.cs
+
+/Punk.iOS/bin
+/Punk.iOS/obj

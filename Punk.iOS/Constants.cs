@@ -38,6 +38,7 @@ namespace Punk.iOS.Resources
             public static readonly string BITTERNESS = "Bitterness";
             public static readonly string ACIDITY = "Acidity";
             public static readonly string COLOR = "Color";
+            public static readonly string FOOD_PAIRINGS = "Food Pairings";
         }
     }
 }

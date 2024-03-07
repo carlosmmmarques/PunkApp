@@ -1,6 +1,7 @@
 ﻿using FFImageLoading;
 using PunkApp.Extensions;
 using Punk.iOS.Models;
+using Punk.iOS.Views;
 
 namespace Punk.iOS.ViewControllers
 {
@@ -32,6 +33,7 @@ namespace Punk.iOS.ViewControllers
                 NameLabel.Text = _beer.Name;
                 DescriptionLabel.Text = _beer.Description;
                 TaglineLabel.Text = _beer.Tagline;
+                FoodPairingsView.Setup(_beer.FoodPairing);
                 ImageService.Instance.LoadUrl(_beer.ImageUrl).Into(BeerImageView);
                 AbvProgressView.SetProgress(_beer.Abv.ConvertFromAbv());
                 IbuProgressView.SetProgress(_beer.Ibu.ConvertFromIbu());
