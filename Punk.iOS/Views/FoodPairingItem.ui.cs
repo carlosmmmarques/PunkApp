@@ -19,7 +19,7 @@ namespace Punk.iOS.Views
 		{
 			Label = new UILabel
 			{
-				Font = Constants.Fonts.ContentFont
+				Font = Constants.Fonts.CONTENT
 			};
 			Add(Label);
 

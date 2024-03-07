@@ -40,7 +40,7 @@ namespace Punk.iOS.ViewControllers
 
             NameLabel = new UILabel
             {
-                Font = Constants.Fonts.TitleFont,
+                Font = Constants.Fonts.TITLE,
                 TextAlignment = UITextAlignment.Center,
                 LineBreakMode = UILineBreakMode.WordWrap,
                 Lines = 0
@@ -49,7 +49,7 @@ namespace Punk.iOS.ViewControllers
 
             TaglineLabel = new UILabel
             {
-                Font = Constants.Fonts.ItalicFont,
+                Font = Constants.Fonts.ITALIC,
                 TextAlignment = UITextAlignment.Center,
                 LineBreakMode = UILineBreakMode.WordWrap,
                 Lines = 0
@@ -58,7 +58,7 @@ namespace Punk.iOS.ViewControllers
 
             DescriptionLabel = new UILabel
             {
-                Font = Constants.Fonts.ContentFont,
+                Font = Constants.Fonts.CONTENT,
                 TextAlignment = UITextAlignment.Center,
                 LineBreakMode = UILineBreakMode.WordWrap,
                 Lines = 0
@@ -70,7 +70,7 @@ namespace Punk.iOS.ViewControllers
 
             TipLabel = new UILabel
             {
-                Font = Constants.Fonts.ItalicFont,
+                Font = Constants.Fonts.ITALIC,
                 TextAlignment = UITextAlignment.Center,
                 Lines = 0,
                 LineBreakMode = UILineBreakMode.WordWrap

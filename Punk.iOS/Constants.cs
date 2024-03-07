@@ -26,11 +26,12 @@ namespace Punk.iOS.Resources
 
         public static class Fonts
         {
-            public static readonly UIFont TitleFont = UIFont.BoldSystemFontOfSize(26);
-            public static readonly UIFont ItalicFont = UIFont.ItalicSystemFontOfSize(14);
-            public static readonly UIFont SmallItalicFont = UIFont.ItalicSystemFontOfSize(12);
-            public static readonly UIFont ContentFont = UIFont.SystemFontOfSize(14);
-            public static readonly UIFont SmallTextFont = UIFont.SystemFontOfSize(10);
+            public static readonly UIFont APP_TITLE_FONT = UIFont.BoldSystemFontOfSize(34);
+            public static readonly UIFont TITLE = UIFont.BoldSystemFontOfSize(26);
+            public static readonly UIFont ITALIC = UIFont.ItalicSystemFontOfSize(14);
+            public static readonly UIFont SMALL_ITALIC = UIFont.ItalicSystemFontOfSize(12);
+            public static readonly UIFont CONTENT = UIFont.SystemFontOfSize(14);
+            public static readonly UIFont SMALL = UIFont.SystemFontOfSize(10);
         }
 
         public static class Text
@@ -40,6 +41,11 @@ namespace Punk.iOS.Resources
             public static readonly string ACIDITY = "Acidity";
             public static readonly string COLOR = "Color";
             public static readonly string FOOD_PAIRINGS = "Food Pairings";
+
+            public static readonly string SEARCH_PLACEHOLDER = "Search for a beer...";
+            public static readonly string SEARCH_BUTTON = "Search";
+            public static readonly string APP_TITLE = "Beer App";
+
         }
     }
 }

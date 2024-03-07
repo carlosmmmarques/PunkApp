@@ -20,7 +20,7 @@ namespace Punk.iOS.Views
 			NameLabel = new UILabel
 			{
                 Text = name,
-                Font = Constants.Fonts.SmallItalicFont
+                Font = Constants.Fonts.SMALL_ITALIC
             };
 			Add(NameLabel);
 

@@ -25,7 +25,7 @@ namespace Punk.iOS.Views
 			{
 				Text = Constants.Text.FOOD_PAIRINGS,
 				TextAlignment = UITextAlignment.Left,
-				Font = Constants.Fonts.ItalicFont
+				Font = Constants.Fonts.ITALIC
 			};
 			Add(TitleLabel);
 

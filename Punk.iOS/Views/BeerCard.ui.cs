@@ -36,14 +36,14 @@ namespace Punk.iOS.Views
 			TaglineLabel = new UILabel
 			{
 				TextAlignment = UITextAlignment.Center,
-				Font = Constants.Fonts.ItalicFont
+				Font = Constants.Fonts.ITALIC
 			};
 			TaglineContainer.Add(TaglineLabel);
 
 			NameLabel = new UILabel
 			{
                 TextAlignment = UITextAlignment.Center,
-                Font = Constants.Fonts.TitleFont,
+                Font = Constants.Fonts.TITLE,
 				Lines = 0,
 				LineBreakMode = UILineBreakMode.WordWrap
             };
@@ -52,7 +52,7 @@ namespace Punk.iOS.Views
 			DescriptionLabel = new UILabel
 			{
                 TextAlignment = UITextAlignment.Center,
-                Font = Constants.Fonts.ContentFont,
+                Font = Constants.Fonts.CONTENT,
 				Lines = 4,
 				LineBreakMode = UILineBreakMode.TailTruncation
             };
@@ -61,7 +61,7 @@ namespace Punk.iOS.Views
 			ContributorLabel = new UILabel
 			{
 				TextAlignment = UITextAlignment.Right,
-                Font = Constants.Fonts.SmallTextFont
+                Font = Constants.Fonts.SMALL
             };
 			Add(ContributorLabel);
         }

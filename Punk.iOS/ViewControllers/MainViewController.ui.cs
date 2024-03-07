@@ -29,23 +29,22 @@ namespace Punk.iOS.ViewControllers
 
             TitleLabel = new UILabel
             {
-                Font = Constants.Fonts.TitleFont,
-                Text = "Carlos's Beer App",
-                TextAlignment = UITextAlignment.Center,
-                LineBreakMode = UILineBreakMode.WordWrap,
-                Lines = 0
+                Font = Constants.Fonts.APP_TITLE_FONT,
+                Text = Constants.Text.APP_TITLE,
             };
             SearchContainer.Add(TitleLabel);
 
             SearchTextField = new UITextField
             {
-                Placeholder = "Search for a beer...",
-                TintColor = UIColor.White
+                Placeholder = Constants.Text.SEARCH_PLACEHOLDER,
+                TintColor = UIColor.Black
             };
             SearchContainer.Add(SearchTextField);
 
             SearchButton = new UIButton();
-            SearchButton.SetTitle("Search", UIControlState.Normal);
+            SearchButton.SetTitle(Constants.Text.SEARCH_BUTTON, UIControlState.Normal);
+            SearchButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            SearchButton.SetTitleColor(UIColor.DarkGray, UIControlState.Highlighted);
             SearchContainer.Add(SearchButton);
 
             _dataSource = new BeerTableViewSource(_viewModel.BeerList, NavigateToBeerDetail);
