@@ -9,8 +9,11 @@ namespace Punk.iOS.ViewControllers
 	{
         protected UIScrollView ScrollView { get; private set; }
         protected UIView ScrollContainer { get; private set; }
+
+        protected UIView TopContainer { get; set; }
         protected UILabel NameLabel { get; private set; }
         protected UILabel TaglineLabel { get; private set; }
+
         protected UILabel DescriptionLabel { get; private set; }
 
         protected FoodPairingsView FoodPairingsView { get; private set; }
@@ -38,6 +41,9 @@ namespace Punk.iOS.ViewControllers
             ScrollContainer = new UIView();
             ScrollView.Add(ScrollContainer);
 
+            TopContainer = GetContainer();
+            ScrollContainer.Add(TopContainer);
+
             NameLabel = new UILabel
             {
                 Font = Constants.Fonts.TITLE,
@@ -45,7 +51,7 @@ namespace Punk.iOS.ViewControllers
                 LineBreakMode = UILineBreakMode.WordWrap,
                 Lines = 0
             };
-            ScrollContainer.Add(NameLabel);
+            TopContainer.Add(NameLabel);
 
             TaglineLabel = new UILabel
             {
@@ -54,7 +60,7 @@ namespace Punk.iOS.ViewControllers
                 LineBreakMode = UILineBreakMode.WordWrap,
                 Lines = 0
             };
-            ScrollContainer.Add(TaglineLabel);
+            TopContainer.Add(TaglineLabel);
 
             DescriptionLabel = new UILabel
             {
@@ -77,13 +83,7 @@ namespace Punk.iOS.ViewControllers
             };
             ScrollContainer.Add(TipLabel);
 
-            ImagegeContainer = new UIView
-            {
-                BackgroundColor = UIColor.SystemGray6,
-                ClipsToBounds = true
-            };
-            ImagegeContainer.Layer.BorderWidth = 1;
-            ImagegeContainer.Layer.BorderColor = UIColor.Gray.CGColor;
+            ImagegeContainer = GetContainer();
             ScrollContainer.Add(ImagegeContainer);
 
             BeerImageView = new UIImageView
@@ -134,15 +134,18 @@ namespace Punk.iOS.ViewControllers
 
             ScrollContainer.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
             ScrollContainer.AddConstraints(
-                NameLabel.AtTopOfSafeArea(ScrollContainer, Constants.Margins.EXTRA_BIG),
-                NameLabel.AtLeadingOf(ScrollContainer, Constants.Margins.MEDIUM),
-                NameLabel.AtTrailingOf(ScrollContainer, Constants.Margins.MEDIUM),
+                //NameLabel.AtTopOfSafeArea(ScrollContainer, Constants.Margins.EXTRA_BIG),
+                //NameLabel.AtLeadingOf(ScrollContainer, Constants.Margins.MEDIUM),
+                //NameLabel.AtTrailingOf(ScrollContainer, Constants.Margins.MEDIUM),
 
-                TaglineLabel.Below(NameLabel, Constants.Margins.EXTRA_BIG),
-                TaglineLabel.WithSameLeading(NameLabel),
-                TaglineLabel.WithSameTrailing(NameLabel),
+                //TaglineLabel.Below(NameLabel, Constants.Margins.EXTRA_BIG),
+                //TaglineLabel.WithSameLeading(NameLabel),
+                //TaglineLabel.WithSameTrailing(NameLabel),
+                TopContainer.AtTopOf(ScrollContainer),
+                TopContainer.AtLeadingOf(ScrollContainer),
+                TopContainer.AtTrailingOf(ScrollContainer),
 
-                DescriptionLabel.Below(TaglineLabel, Constants.Margins.BIG),
+                DescriptionLabel.Below(TopContainer, Constants.Margins.BIG),
                 DescriptionLabel.WithSameLeading(NameLabel),
                 DescriptionLabel.WithSameTrailing(NameLabel),
 
@@ -160,6 +163,18 @@ namespace Punk.iOS.ViewControllers
                 ImagegeContainer.AtBottomOf(ScrollContainer)
             );
 
+            TopContainer.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
+            TopContainer.AddConstraints(
+                NameLabel.AtTopOfSafeArea(TopContainer, Constants.Margins.EXTRA_BIG),
+                NameLabel.AtLeadingOf(TopContainer, Constants.Margins.MEDIUM),
+                NameLabel.AtTrailingOf(TopContainer, Constants.Margins.MEDIUM),
+
+                TaglineLabel.Below(NameLabel, Constants.Margins.EXTRA_SMALL),
+                TaglineLabel.WithSameLeading(NameLabel),
+                TaglineLabel.WithSameTrailing(NameLabel),
+                TaglineLabel.AtBottomOf(TopContainer, Constants.Margins.EXTRA_BIG)
+            );
+
             ImagegeContainer.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
             ImagegeContainer.AddConstraints(
                 ProgessStackView.Top().GreaterThanOrEqualTo().TopOf(ImagegeContainer).Plus(Constants.Margins.MEDIUM),
@@ -173,6 +188,17 @@ namespace Punk.iOS.ViewControllers
                 BeerImageView.AtTrailingOf(ImagegeContainer, Constants.Margins.MEDIUM),
                 BeerImageView.WithSameWidth(ProgessStackView)
             );
+        }
+
+        private UIView GetContainer()
+        {
+            var container = new UIView
+            {
+                BackgroundColor = UIColor.SystemGray6,
+            };
+            container.Layer.BorderWidth = 1;
+            container.Layer.BorderColor = UIColor.Gray.CGColor;
+            return container;
         }
     }
 }

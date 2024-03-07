@@ -19,7 +19,8 @@ namespace Punk.iOS.Views
 		{
 			Label = new UILabel
 			{
-				Font = Constants.Fonts.CONTENT
+				Font = Constants.Fonts.CONTENT,
+				TextAlignment = UITextAlignment.Center
 			};
 			Add(Label);
 
