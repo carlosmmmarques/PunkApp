@@ -13,7 +13,7 @@ namespace Punk.iOS.Views
 		public void Setup(List<string> foodPairings)
 		{
 			foreach (var pairing in foodPairings)
-                FooPairingsStack.AddArrangedSubview(GetPairingLabel(pairing));
+                FooPairingsStack.AddArrangedSubview(new FoodPairingItem(pairing));
 		}
 	}
 }

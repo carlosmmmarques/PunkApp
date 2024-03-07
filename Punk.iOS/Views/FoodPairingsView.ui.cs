@@ -39,22 +39,14 @@ namespace Punk.iOS.Views
 			this.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
 			this.AddConstraints(
 				TitleLabel.AtTopOf(this),
-				TitleLabel.AtLeadingOf(this),
-				TitleLabel.AtTrailingOf(this),
+				TitleLabel.AtLeadingOf(this, Constants.Margins.MEDIUM),
+				TitleLabel.AtTrailingOf(this, Constants.Margins.MEDIUM),
 
                 FooPairingsStack.Below(TitleLabel, Constants.Margins.SMALL),
-                FooPairingsStack.AtLeadingOf(this),
-                FooPairingsStack.AtTrailingOf(this),
+                FooPairingsStack.WithSameLeading(TitleLabel),
+                FooPairingsStack.WithSameTrailing(TitleLabel),
                 FooPairingsStack.AtBottomOf(this)
             );
-		}
-
-		private UILabel GetPairingLabel(string text)
-		{
-			return new UILabel
-			{
-				Text = text
-			};
 		}
 	}
 }
