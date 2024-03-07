@@ -134,13 +134,6 @@ namespace Punk.iOS.ViewControllers
 
             ScrollContainer.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
             ScrollContainer.AddConstraints(
-                //NameLabel.AtTopOfSafeArea(ScrollContainer, Constants.Margins.EXTRA_BIG),
-                //NameLabel.AtLeadingOf(ScrollContainer, Constants.Margins.MEDIUM),
-                //NameLabel.AtTrailingOf(ScrollContainer, Constants.Margins.MEDIUM),
-
-                //TaglineLabel.Below(NameLabel, Constants.Margins.EXTRA_BIG),
-                //TaglineLabel.WithSameLeading(NameLabel),
-                //TaglineLabel.WithSameTrailing(NameLabel),
                 TopContainer.AtTopOf(ScrollContainer),
                 TopContainer.AtLeadingOf(ScrollContainer),
                 TopContainer.AtTrailingOf(ScrollContainer),
